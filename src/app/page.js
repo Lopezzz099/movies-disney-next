@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Movies from "@/components/pages/movies/Movies";
 
 const getData = async () => {
   const res = await fetch("http://localhost:3000/api/movies");
@@ -11,25 +11,10 @@ export default async function Home() {
   return (
     <main
       style={{
-        minHeight: "calc(100vh - 250px)",
-        overflowX: "hidden",
         padding: "0 calc(3.5vw + 24px)",
-        backgroundColor: "rgb(26, 29, 41)",
-        transition: "opacity 200ms ease 0s",
       }}
     >
-      {movies.map((movie) => (
-        <div key={movie.id}>
-          {/* <Image src={movie.frontImage} width={300} height={300} alt={movie.name}/> */}
-          <Image
-            src={movie?.frontImage}
-            width={300}
-            height={300}
-            alt={movie.name}
-          />
-          <h1>{movie.name}</h1>
-        </div>
-      ))}
+      <Movies movies={movies}/>
     </main>
   );
 }

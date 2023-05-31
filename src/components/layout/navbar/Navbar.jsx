@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = ({ isActive }) => {
   return (
@@ -10,7 +11,7 @@ const Navbar = ({ isActive }) => {
       <div className="w-4/5 flex">
         <ul className="flex w-800 items-center justify-between">
           <li className="w-20">
-            <a href="/home">
+            <Link href="/home">
               <Image
                 src="https://res.cloudinary.com/dishtratk/image/upload/v1685474334/disney-app/common/logo.1a56f51c764022ee769c91d894d44326_d0ssm3.svg"
                 alt="logo"
@@ -18,10 +19,10 @@ const Navbar = ({ isActive }) => {
                 height={100}
                 className="w-full h-full"
               />
-            </a>
+            </Link>
           </li>
           <li className="uppercase text-white text-sm font-semibold">
-            <a href="/home" className="flex items-center">
+            <Link href="/home" className="flex items-center">
               <Image
                 src="https://res.cloudinary.com/dishtratk/image/upload/v1685496959/disney-app/icons/home-svgrepo-com_ia70m1.svg"
                 alt="home"
@@ -30,7 +31,7 @@ const Navbar = ({ isActive }) => {
                 className="w-4 h-4 m-2"
               />
               inicio
-            </a>
+            </Link>
           </li>
           <li className="uppercase text-white text-sm font-semibold flex items-center">
             {" "}
