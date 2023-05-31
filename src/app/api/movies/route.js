@@ -17,11 +17,11 @@ export function GET() {
       clasification: "13+",
       releaseYear: "2017",
       frontImage:
-        "https://res.cloudinary.com/dishtratk/image/upload/v1685473766/disney-app/scale_v0dxue.jpg",
+        "https://res.cloudinary.com/dishtratk/image/upload/v1685473766/disney-app/movies/scale_v0dxue.jpg",
       titleImage:
-        "https://res.cloudinary.com/dishtratk/image/upload/v1685473797/disney-app/scale_qcxpzt.png",
+        "https://res.cloudinary.com/dishtratk/image/upload/v1685473797/disney-app/movies/scale_qcxpzt.png",
       bgImage:
-        "https://res.cloudinary.com/dishtratk/image/upload/v1685473815/disney-app/scale_ozzlog.jpg",
+        "https://res.cloudinary.com/dishtratk/image/upload/v1685473815/disney-app/movies/scale_ozzlog.jpg",
       cast: [
         "Chris Pratt",
         "Bradley Cooper",
@@ -47,11 +47,11 @@ export function GET() {
       clasification: "13+",
       releaseYear: "2014",
       frontImage:
-        "https://res.cloudinary.com/dishtratk/image/upload/v1685473900/disney-app/scale_p2fuz5.jpg",
+        "https://res.cloudinary.com/dishtratk/image/upload/v1685473900/disney-app/movies/scale_p2fuz5.jpg",
       titleImage:
-        "https://res.cloudinary.com/dishtratk/image/upload/v1685473912/disney-app/scale_jgk0ou.png",
+        "https://res.cloudinary.com/dishtratk/image/upload/v1685473912/disney-app/movies/scale_jgk0ou.png",
       bgImage:
-        "https://res.cloudinary.com/dishtratk/image/upload/v1685473925/disney-app/scale_fwo4cz.jpg",
+        "https://res.cloudinary.com/dishtratk/image/upload/v1685473925/disney-app/movies/scale_fwo4cz.jpg",
       cast: [
         "Chris Pratt",
         "Bradley Cooper",
@@ -72,11 +72,11 @@ export function GET() {
       clasification: "13+",
       releaseYear: "2011",
       frontImage:
-        "https://res.cloudinary.com/dishtratk/image/upload/v1685473986/disney-app/scale_jqdkgc.jpg",
+        "https://res.cloudinary.com/dishtratk/image/upload/v1685473986/disney-app/movies/scale_jqdkgc.jpg",
       titleImage:
-        "https://res.cloudinary.com/dishtratk/image/upload/v1685473998/disney-app/scale_qf0dlx.png",
+        "https://res.cloudinary.com/dishtratk/image/upload/v1685473998/disney-app/movies/scale_qf0dlx.png",
       bgImage:
-        "https://res.cloudinary.com/dishtratk/image/upload/v1685474008/disney-app/scale_yydgyt.jpg",
+        "https://res.cloudinary.com/dishtratk/image/upload/v1685474008/disney-app/movies/scale_yydgyt.jpg",
       cast: [
         "Chris Evans",
         "Tommy Lee Jones",

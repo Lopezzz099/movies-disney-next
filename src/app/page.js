@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const getData = async () => {
   const res = await fetch("http://localhost:3000/api/movies");
   const data = await res.json();
@@ -19,7 +21,7 @@ export default async function Home() {
       {movies.map((movie) => (
         <div key={movie.id}>
           {/* <Image src={movie.frontImage} width={300} height={300} alt={movie.name}/> */}
-          <img
+          <Image
             src={movie?.frontImage}
             width={300}
             height={300}

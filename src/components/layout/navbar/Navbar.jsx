@@ -10,23 +10,27 @@ const Navbar = ({ isActive }) => {
       <div className="w-4/5 flex">
         <ul className="flex w-800 items-center justify-between">
           <li className="w-20">
-            <Image
-              src="https://res.cloudinary.com/dishtratk/image/upload/v1685474334/disney-app/common/logo.1a56f51c764022ee769c91d894d44326_d0ssm3.svg"
-              alt="logo"
-              width={100}
-              height={100}
-              className="w-full h-full"
-            />
+            <a href="/home">
+              <Image
+                src="https://res.cloudinary.com/dishtratk/image/upload/v1685474334/disney-app/common/logo.1a56f51c764022ee769c91d894d44326_d0ssm3.svg"
+                alt="logo"
+                width={100}
+                height={100}
+                className="w-full h-full"
+              />
+            </a>
           </li>
-          <li className="uppercase text-white text-sm font-semibold flex items-center">
-            <Image
-              src="https://res.cloudinary.com/dishtratk/image/upload/v1685496959/disney-app/icons/home-svgrepo-com_ia70m1.svg"
-              alt="home"
-              width={20}
-              height={20}
-              className="w-5 h-5 m-2"
-            />
-            inicio
+          <li className="uppercase text-white text-sm font-semibold">
+            <a href="/home" className="flex items-center">
+              <Image
+                src="https://res.cloudinary.com/dishtratk/image/upload/v1685496959/disney-app/icons/home-svgrepo-com_ia70m1.svg"
+                alt="home"
+                width={20}
+                height={20}
+                className="w-4 h-4 m-2"
+              />
+              inicio
+            </a>
           </li>
           <li className="uppercase text-white text-sm font-semibold flex items-center">
             {" "}
@@ -35,7 +39,7 @@ const Navbar = ({ isActive }) => {
               alt="search"
               width={20}
               height={20}
-              className="w-5 h-5 m-2"
+              className="w-4 h-4 m-2"
             />
             busqueda
           </li>
@@ -46,7 +50,7 @@ const Navbar = ({ isActive }) => {
               alt="myList"
               width={20}
               height={20}
-              className="w-5 h-5 m-2"
+              className="w-4 h-4 m-2"
             />
             mi lista
           </li>
@@ -57,7 +61,7 @@ const Navbar = ({ isActive }) => {
               alt="movies"
               width={20}
               height={20}
-              className="w-5 h-5 m-2"
+              className="w-4 h-4 m-2"
             />
             peliculas
           </li>
@@ -68,13 +72,24 @@ const Navbar = ({ isActive }) => {
               alt="series"
               width={20}
               height={20}
-              className="w-5 h-5 m-2"
+              className="w-4 h-4 m-2"
             />
             series
           </li>
         </ul>
       </div>
-      <div className="w-1/5">usuario</div>
+      <div className="w-1/5 flex justify-end">
+        <p className=" text-white flex items-center text-sm mx-4">Ignacio</p>
+        <div className="flex items-center">
+          <Image
+            src="https://res.cloudinary.com/dishtratk/image/upload/v1685547097/disney-app/icons/scale_g6l2xv.png"
+            alt="logoUsuario"
+            width={100}
+            height={100}
+            className="w-12"
+          />
+        </div>
+      </div>
     </header>
   );
 };
