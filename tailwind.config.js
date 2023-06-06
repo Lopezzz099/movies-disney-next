@@ -20,7 +20,17 @@ module.exports = {
         '70': '70px',
       },
       width: {
-        '800': '800px'
+        '800': '800px',
+        '240': 'calc(20% - 16px);'
+      },
+      translate: {
+        '5000': '-50%'
+      },
+      gap: {
+        '11': '20px 20px',
+      },
+      margin: {
+        '10auto': '10px auto',
       }
     },
   },

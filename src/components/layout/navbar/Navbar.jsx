@@ -6,12 +6,12 @@ const Navbar = ({ isActive }) => {
     <header
       className={`${
         isActive ? "bg-nav" : "bg-transparent"
-      } transition 0.2s ease-in-out w-full h-70 px-9 flex justify-between items-centerm sticky top-0`}
+      } transition 0.2s ease-in-out w-full h-70 px-9 flex z-50 justify-between items-centerm sticky top-0`}
     >
       <div className="w-4/5 flex">
         <ul className="flex w-800 items-center justify-between">
           <li className="w-20">
-            <Link href="/home">
+            <Link href="/">
               <Image
                 src="https://res.cloudinary.com/dishtratk/image/upload/v1685474334/disney-app/common/logo.1a56f51c764022ee769c91d894d44326_d0ssm3.svg"
                 alt="logo"
@@ -22,7 +22,7 @@ const Navbar = ({ isActive }) => {
             </Link>
           </li>
           <li className="uppercase text-white text-sm font-semibold">
-            <Link href="/home" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <Image
                 src="https://res.cloudinary.com/dishtratk/image/upload/v1685496959/disney-app/icons/home-svgrepo-com_ia70m1.svg"
                 alt="home"
@@ -55,16 +55,18 @@ const Navbar = ({ isActive }) => {
             />
             mi lista
           </li>
-          <li className="uppercase text-white text-sm font-semibold flex items-center">
+          <li className="uppercase text-white text-sm font-semibold">
             {" "}
-            <Image
-              src="https://res.cloudinary.com/dishtratk/image/upload/v1685499476/disney-app/icons/cinema-film-movie-svgrepo-com_yusxjt.svg"
-              alt="movies"
-              width={20}
-              height={20}
-              className="w-4 h-4 m-2"
-            />
-            peliculas
+            <Link href="/movies" className="flex items-center">
+              <Image
+                src="https://res.cloudinary.com/dishtratk/image/upload/v1685499476/disney-app/icons/cinema-film-movie-svgrepo-com_yusxjt.svg"
+                alt="movies"
+                width={20}
+                height={20}
+                className="w-4 h-4 m-2"
+              />
+              peliculas
+            </Link>
           </li>
           <li className="uppercase text-white text-sm font-semibold flex items-center">
             {" "}

@@ -8,7 +8,7 @@ export function GET() {
       description:
         "Matt Murdock no es cualquier abogado de Hell's Kitchen. Sus sentidos se agudizaron tras quedar ciego en un accidente de niño. Bajo el manto de la noche, lucha contra el crimen y atrae enemigos poderosos, como Wilson Fisk (alias Kingpin). Pero su dilema crece día a día: debajo de la máscara, quiere creer en la ley; Daredevil, hace justicia por mano propia.",
       category: "marvel",
-      gender: ["Cine negro", "Superhéroes", "Crimen", "Acción y aventura"],
+      gender: ["cine-negro", "superheroes", "crimen", "accion-y-aventura"],
       clasification: "18+",
       releaseYear: "2015",
       frontImage:
@@ -34,10 +34,10 @@ export function GET() {
         "Anthony Mackie y Sebastian Stan encarnan a Sam Wilson (Falcon) y Bucky Barnes (el Soldado del Invierno) en “Falcon y el Soldado del Invierno”, de Marvel Studios. El dúo que se formó al final de “Avengers: Endgame” ahora entra en acción en una aventura por el mundo que pondrá a prueba todas sus habilidades, incluso la paciencia. La serie de seis episodios, con Kari Skogland en dirección y Malcolm Spellman como guionista principal, también tiene de protagonistas a Daniel Brühl (Zemo), Emily VanCamp (Sharon Carter) y Wyatt Russell (John Walker).",
       category: "marvel",
       gender: [
-        "Ciencia ficción",
-        "Superhéroes",
-        "Amistad",
-        "Acción y aventura",
+        "ciencia-ficcion",
+        "superheroes",
+        "amistad",
+        "accion-y-aventura",
       ],
       clasification: "14+",
       releaseYear: "2021",
@@ -63,7 +63,7 @@ export function GET() {
       description:
         "Steven Grant parecía llevar una vida sin sobresaltos hasta que la realidad empezó a desmoronarse a sus pies, rodeado de pesadillas de otra vida: la del mercenario Marc Spector. Además de múltiples personalidades, ahora tiene enemigos brutales que lo persiguen, y un misterio mortal que resolver con los dioses del antiguo Egipto. Algunas secuencias o patrones de luces intermitentes pueden afectar a espectadores fotosensibles.",
       category: "marvel",
-      gender: ["Fantasía", "Superhéroes", "Acción y aventura"],
+      gender: ["fantasia", "superheroes", "accion-y-aventura"],
       clasification: "14+",
       releaseYear: "2022",
       frontImage:
@@ -87,8 +87,8 @@ export function GET() {
       name: "Gordon Ramsay: Sabores extremos - Aventuras extremas",
       description:
         "Todo se vuelve más personal cuando Gordon se enfrenta a los Chefs estrella Paul Ainsworth y Matt Waldron del Reino Unido, quienes comenzaron en la cocina de Ramsay antes de abrir sus propios restaurantes. Con Paul y Matt trabajando en terreno local, Gordon tendrá que ser muy municioso con el cocinero finalista para evitar que el estudiante se convierta en maestro. Mientras tanto, en Costa Rica, Gordon enfrenta su mayor desafío: competir cabeza a cabeza con su hija Tilly en una épica batalla culinaria",
-      category: "National Geographic",
-      gender: ["Reality", "Estilo de vida", "Juegos y Competiciones"],
+      category: "national-geographic",
+      gender: ["reality", "estilo-de-vida", "juegos-y-competiciones"],
       clasification: "12+",
       releaseYear: "2022",
       frontImage:
@@ -105,8 +105,8 @@ export function GET() {
       name: "Gorongosa: El paraíso renace",
       description:
         "El Parque Nacinal Gorongosa era conocido como el edén de Africa, pero 15 años de guerra casi acaban por completo con los animales, por carne y dinero. Ahora, es el escenario de mayor esfuerzo de restauración de la vida silvestre de todos los tiempos. Esta es la historia de Gorongosa, contada a través del viaje de una elefanta tenaz, Mwana Nzo. Marcada por la guerra, ella y su familia se adaptan lentamente a la paz en un parque que ahora reboza de vida.",
-      category: "National Geographic",
-      gender: ["Documental", "Animales", "Naturaleza"],
+      category: "national-geographic",
+      gender: ["documental", "animales", "naturaleza"],
       clasification: "12+",
       releaseYear: "2022",
       frontImage:
@@ -123,8 +123,8 @@ export function GET() {
       name: "Tiburones en la noche",
       description:
         "Desde las profundidades azules del océano, hasta el interminable cielo, el público obtendrá una mirada sin precedentes de la vida de los tiburones martillo y su sorprendente conexión con la luna.",
-      category: "National Geographic",
-      gender: ["Documental", "Animales", "Naturaleza"],
+      category: "national-geographic",
+      gender: ["documental", "animales", "naturaleza"],
       clasification: "12+",
       releaseYear: "2022",
       frontImage:
@@ -141,8 +141,8 @@ export function GET() {
       name: "Secreto en los océanos",
       description:
         "Desconecta el océano para revelar secretos ocultos y mundos perdidos con una tecnología innovadora, impresionantes fotografías y conocimientos de los mejores arqueólogos marinos. Drain the oceans ofrece nuevos y profundos conocimientos sobre la épica historia de la civilización humana y de la Tierra, exponiendo ciudades hundidas, naufragios y asombrosas maravillas naturales de las profundidades.",
-      category: "National Geographic",
-      gender: ["Historia", "Docuserie"],
+      category: "national-geographic",
+      gender: ["historia", "docuserie"],
       clasification: "14+",
       releaseYear: "2018-2022",
       frontImage:

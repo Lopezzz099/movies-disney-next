@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Movies = ({ movies }) => {
+const CardMovies = ({ movies }) => {
   return movies.map((movie) => (
     <Link key={movie.id} href={`/movies/${movie.id}`}>
       <div>
@@ -19,4 +19,4 @@ const Movies = ({ movies }) => {
   ));
 };
 
-export default Movies;
+export default CardMovies;

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export function GET() {
+export function GET(request, { params }) {
   const movies = [
     {
       id: 1,
@@ -291,5 +291,9 @@ export function GET() {
       duration: 80,
     },
   ];
-  return NextResponse.json(movies);
+
+  const moviesSelected = movies.filter(
+    (element) => element.gender === +params.gender
+  );
+  return NextResponse.json(moviesSelected);
 }
