@@ -243,7 +243,7 @@ export function GET() {
       duration: 116,
     },
     {
-      id: 11,
+      id: 10,
       name: "El libro de la selva",
       description: `Una celebración musical de amistad, diversión y aventuras en esta clásica película animada, la última con el toque personal de Walt Disney. Acompañamos una emocionante aventura con Mowgli mientras viaja por la selva hacia la aldea con Bagheera, la pantera sabia. Conoceremos al Rey Louie, la hipnótica serpiente Kaa y el adorable oso Baloo, que le enseña a Mowgli las "necesidades básicas" de la vida y lo que significa la amistad. Este programa se presenta como fue creado originalmente. Puede contener representaciones culturales anticuadas.`,
       category: "disney",
@@ -267,28 +267,114 @@ export function GET() {
       duration: 80,
     },
     {
-      id: 12,
-      name: "El libro de la selva",
-      description: `Una celebración musical de amistad, diversión y aventuras en esta clásica película animada, la última con el toque personal de Walt Disney. Acompañamos una emocionante aventura con Mowgli mientras viaja por la selva hacia la aldea con Bagheera, la pantera sabia. Conoceremos al Rey Louie, la hipnótica serpiente Kaa y el adorable oso Baloo, que le enseña a Mowgli las "necesidades básicas" de la vida y lo que significa la amistad. Este programa se presenta como fue creado originalmente. Puede contener representaciones culturales anticuadas.`,
+      id: 11,
+      name: "La noche de las narices frías",
+      description: `Cruella De Vil es la villana más indignante de Disney. Inicia una aventura cuando secuestra a todos los cachorros dálmata en Londres, incluyendo a los 15 de la familia de Pongo y Perdita. A través del poder del "Crepúsculo del ladrido", Pongo lidera un heroico elenco de personajes en un dramático intento de rescatar a todos. Contiene imágenes de tabaco.`,
       category: "disney",
       gender: ["familiar", "accion-y-aventura", "animacion"],
       clasification: "0+",
-      releaseYear: "1967",
+      releaseYear: "1961",
       frontImage:
-        "https://res.cloudinary.com/dishtratk/image/upload/v1685999218/disney-app/movies/scale_jh9q4l.jpg",
+        "https://res.cloudinary.com/dishtratk/image/upload/v1685998758/disney-app/movies/scale_unwe9s.jpg",
       titleImage:
-        "https://res.cloudinary.com/dishtratk/image/upload/v1685999231/disney-app/movies/scale_wjk3u8.png",
+        "https://res.cloudinary.com/dishtratk/image/upload/v1685998771/disney-app/movies/scale_zmmaly.png",
       bgImage:
-        "https://res.cloudinary.com/dishtratk/image/upload/v1685999245/disney-app/movies/scale_fubagw.jpg",
+        "https://res.cloudinary.com/dishtratk/image/upload/v1685998783/disney-app/movies/scale_spoyin.jpg",
       cast: [
-        "Louis Prima",
-        "George Sanders",
-        "Sterling Holloway",
+        "Rod Taylor",
         "J. Pat O'Malley",
-        "Bruce Reitherman",
-        "Verna Felton",
+        "Betty Lou Gerson",
+        "Martha Wentworth",
+        "Ben Wright",
+        "Cate Bauer",
       ],
-      duration: 80,
+      duration: 82,
+    },
+    {
+      id: 12,
+      name: "El planeta del tesoro",
+      description: `Un mapa inspira la búsqueda de un tesoro. Jim Hawkins y un equipo cósmico, con la capitana Amelia, salen a la búsqueda. En un brilloso galeón espacial, Jim se encuentra con el cocinero androide, John Silver, que le enseñará el valor de la amistad y el poder de los sueños. Jim pronto se juntará con el nuevo y loco amigo robot, B.E.N., y el cambiante Morph para descubrir un tesoro más grandioso.`,
+      category: "disney",
+      gender: ["ciencia-ficcion", "familiar", "accion-y-aventura", "animacion"],
+      clasification: "0+",
+      releaseYear: "2002",
+      frontImage:
+        "https://res.cloudinary.com/dishtratk/image/upload/v1686062619/disney-app/movies/scale_ljaxap.jpg",
+      titleImage:
+        "https://res.cloudinary.com/dishtratk/image/upload/v1686062631/disney-app/movies/scale_cb2wck.png",
+      bgImage:
+        "https://res.cloudinary.com/dishtratk/image/upload/v1686062641/disney-app/movies/scale_hfcsc2.jpg",
+      cast: [
+        "Joseph Gordon-Levitt",
+        "Brian Murray",
+        "Emma Thompson",
+        "David Hyde Pierce",
+        "Martin Short",
+        "Dane A. Davis",
+      ],
+      duration: 100,
+    },
+    {
+      id: 13,
+      name: "Wild Life",
+      description: `De los cineastas ganadores del Oscar® Chai Vasarhelyi y Jimmy Chin, "Misión para salvar el mundo" narra la historia de Kris y Doug Tompkins, quienes dejaron atrás el mundo de las marcas al aire libre de gran éxito que ayudaron a promover: Patagonia, The North Face y Esprit. - y dirigieron su atención a un esfuerzo visionario para crear Parques Nacionales a lo largo de Chile y Argentina.`,
+      category: "national-geographic",
+      gender: ["documental"],
+      clasification: "12+",
+      releaseYear: "2023",
+      frontImage:
+        "https://res.cloudinary.com/dishtratk/image/upload/v1686062998/disney-app/movies/scale_jvk2u9.jpg",
+      titleImage:
+        "https://res.cloudinary.com/dishtratk/image/upload/v1686063014/disney-app/movies/scale_k6xwzk.png",
+      bgImage:
+        "https://res.cloudinary.com/dishtratk/image/upload/v1686063025/disney-app/movies/scale_yaqeoz.jpg",
+      cast: [
+        "Kristine Tompkins",
+        "Rick Ridgeway",
+        "Jimmy Chin",
+        "Claudio Alvarado",
+        "Michelle Bachelet",
+        "Dago Guzman",
+      ],
+      duration: 92,
+    },
+    {
+      id: 14,
+      name: "La verdadera Pantera Negra",
+      description: `Las junglas cálidas, secas y caducifolias del sur de la India no son lugar para un leopardo con melanismo. Pero Saya es diferente. Es la única pantera negra en todo el bosque de Kabini, y tiene una cosa en mente: apoderarse de este paraíso de leopardos. Pero Scarface, el gobernante actual, no se rendirá fácilmente. Esta es una historia de asombrosa adaptabilidad y éxito, el viaje de Saya: la verdadera pantera negra.`,
+      category: "national-geographic",
+      gender: ["documental", "animales-y-naturaleza"],
+      clasification: "12+",
+      releaseYear: "2020",
+      frontImage:
+        "https://res.cloudinary.com/dishtratk/image/upload/v1686063286/disney-app/movies/scale_nrevmo.jpg",
+      titleImage:
+        "https://res.cloudinary.com/dishtratk/image/upload/v1686063300/disney-app/movies/scale_d5ambg.png",
+      bgImage:
+        "https://res.cloudinary.com/dishtratk/image/upload/v1686063389/disney-app/movies/scale_bxng3s.jpg",
+      cast: [
+        "Salvatore Vecchio",
+      ],
+      duration: 44,
+    },
+    {
+      id: 15,
+      name: "Perdidos en el Everest",
+      description: `El 8 de junio de 1924, los exploradores británicos George Mallory y Andrew Irvine desaparecieron en el Monte Everest, a sólo 244 metros de llegar a la cima. Se cree que llevaban consigo una cámara. Esa cámara podría reescribir la historia. Un equipo de alpinistas busca el cuerpo de Irvine para resolver el mayor misterio del Everest.`,
+      category: "national-geographic",
+      gender: ["supervivencia", "documental", "animales-y-naturaleza"],
+      clasification: "12+",
+      releaseYear: "2020",
+      frontImage:
+        "https://res.cloudinary.com/dishtratk/image/upload/v1686063572/disney-app/movies/scale_d82ncn.jpg",
+      titleImage:
+        "https://res.cloudinary.com/dishtratk/image/upload/v1686063593/disney-app/movies/scale_sue6b3.png",
+      bgImage:
+        "https://res.cloudinary.com/dishtratk/image/upload/v1686063606/disney-app/movies/scale_yctvsq.jpg",
+      cast: [
+        "Tate Donovan",
+      ],
+      duration: 60,
     },
   ];
   return NextResponse.json(movies);

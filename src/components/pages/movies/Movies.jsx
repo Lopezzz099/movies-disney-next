@@ -1,22 +1,43 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Movies = ({ movies }) => {
-  return movies.map((movie) => (
-    <Link key={movie.id} href={`/movies/${movie.id}`}>
-      <div>
-        {/* <Image src={movie.frontImage} width={300} height={300} alt={movie.name}/> */}
-        <Image
-          src={movie?.frontImage}
-          width={300}
-          height={300}
-          alt={movie.name}
-          className="w-auto h-auto"
-        />
-      </div>
-    </Link>
-  ));
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Movies.css";
+import CardMovie from "@/components/common/cardMovie/CardMovie";
+
+const Movies = ({ movies, gender }) => {
+
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    centerMode: false,
+  };
+
+  const nuevoGender = gender.charAt(0).toUpperCase() + gender.slice(1)
+
+  return (
+    <div style={{height: "300px"}}>
+      <h4 className=" text-white text-xl">{nuevoGender}</h4>
+      <Slider {...settings}>
+        {movies
+          .filter((movie) => movie.gender.includes(gender))
+          .map((movie) => {
+            return (
+              <CardMovie key={movie.id} movie={movie}/>
+            );
+          })}
+      </Slider>
+    </div>
+  );
 };
 
 export default Movies;
