@@ -1,4 +1,5 @@
 import CardCategory from "@/components/common/cardCategory/cardCategory";
+import Carusel from "@/components/layout/carusel/Carusel";
 import Movies from "@/components/pages/movies/Movies";
 
 const getData = async () => {
@@ -55,6 +56,7 @@ export default async function Home() {
         paddingTop: "100px"
       }}
     >
+      <Carusel movies={movies}/>
       <div className="flex flex-wrap flex-row justify-between items-center gap-11 m-10auto relative">
         {arrCategories.map((card) => (
           <CardCategory key={card.path} cardCategory={card} />
