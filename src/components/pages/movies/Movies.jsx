@@ -10,7 +10,6 @@ import "./Movies.css";
 import CardMovie from "@/components/common/cardMovie/CardMovie";
 
 const Movies = ({ movies, gender }) => {
-
   const settings = {
     dots: false,
     infinite: false,
@@ -22,17 +21,17 @@ const Movies = ({ movies, gender }) => {
     centerMode: false,
   };
 
-  const nuevoGender = gender.charAt(0).toUpperCase() + gender.slice(1)
-
   return (
-    <div style={{height: "300px"}}>
-      <h4 className=" text-white text-xl">{nuevoGender}</h4>
+    <div>
+      <h4 className=" text-white text-xl capitalize">{gender}</h4>
       <Slider {...settings}>
         {movies
           .filter((movie) => movie.gender.includes(gender))
           .map((movie) => {
             return (
-              <CardMovie key={movie.id} movie={movie}/>
+              <div key={movie.id}>
+                <CardMovie movie={movie} isInHome={true}/>
+              </div>
             );
           })}
       </Slider>

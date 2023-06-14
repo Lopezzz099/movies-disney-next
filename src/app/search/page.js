@@ -30,7 +30,7 @@ const SearchPage = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{ paddingTop: "100px" }}>
       <input
         type="text"
         placeholder="Título, personaje o género"

@@ -12,6 +12,7 @@ export default async function MoviesFilter() {
     <main
       style={{
         padding: "0 calc(3.5vw + 24px)",
+        paddingTop: "100px"
       }}
     >
       <Movies movies={movies} />
