@@ -53,7 +53,7 @@ export default async function Home() {
     <main
       style={{
         padding: "0 calc(3.5vw + 24px)",
-        paddingTop: "100px"
+        paddingTop: "80px"
       }}
     >
       <Carusel movies={movies}/>

@@ -3,3 +3,11 @@
     right: 1%;
     width: inherit;
 }
+.slick-dots li button:before{
+    color: rgb(150, 158, 171);
+    opacity: 1;
+}
+.slick-dots li.slick-active button:before{
+    color: rgb(249, 249, 249);
+    opacity: 1;
+}
