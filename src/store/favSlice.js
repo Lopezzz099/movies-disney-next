@@ -1,21 +1,30 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  myList: JSON.parse( localStorage.getItem("favsMovies" )) || [],
-}
+  myList: JSON.parse(localStorage.getItem("favsMovies")) || [],
+};
 
 export const favSlice = createSlice({
-  name: 'favs',
+  name: "favs",
   initialState,
   reducers: {
-    addMovie: (state, action)=>{
-        state.myList = [...state.myList, action.payload]
-        localStorage.setItem("favsMovies", JSON.stringify(state.myList))
-    }
+    handleFav: (state, action) => {
+      let exists = state.myList.some((movie) => movie.id === action.payload.id);
+      if (!exists) {
+        state.myList = [...state.myList, action.payload];
+      } else {
+        let newArray = state.myList.filter(
+          (movie) => movie.id !== action.payload.id
+        );
+        state.myList = newArray;
+      }
+      localStorage.setItem("favsMovies", JSON.stringify(state.myList));
+    },
+    
   },
-})
+});
 
 // Action creators are generated for each case reducer function
-export const { addMovie } = favSlice.actions
+export const { handleFav } = favSlice.actions;
 
-export default favSlice.reducer
+export default favSlice.reducer;

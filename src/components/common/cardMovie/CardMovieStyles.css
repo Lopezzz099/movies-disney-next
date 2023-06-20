@@ -1,3 +1,7 @@
 .aplicandoHover:hover {
   outline: auto;
 }
+img{
+  width: 100%;
+  /* max-width: inherit !important; */
+}

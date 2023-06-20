@@ -2,6 +2,7 @@
 
 import CardMovie from "@/components/common/cardMovie/CardMovie";
 import React, { useEffect, useState } from "react";
+import "./search.css";
 
 const SearchPage = () => {
   const [movies, setMovies] = useState([]);
@@ -30,14 +31,18 @@ const SearchPage = () => {
   }, []);
 
   return (
-    <div style={{ paddingTop: "100px" }}>
+    <div style={{ paddingTop: "74px" }}>
       <input
         type="text"
         placeholder="Título, personaje o género"
-        className="input w-full"
+        className="search w-full h-[100px] text-[44px] outline-none text-[#a8a9ad]"
         onChange={(e) => setName(e.target.value)}
       />
-      <div className="flex flex-wrap">
+      <p style={{marginBottom: "20px", color: "#f9f9f9", fontSize: "20px", padding: "0 calc(3.5vw + 24px)", marginTop: "40px" }}>Explorar</p>
+      <div
+        className="grid grid-cols-5 gap-7"
+        style={{ padding: "0 calc(3.5vw + 24px)" }}
+      >
         {!name
           ? movies.map((movie) => <CardMovie key={movie.id} movie={movie} />)
           : moviesFiltered.map((movie) => (

@@ -1,0 +1,7 @@
+.search {
+  padding-left: calc(3.5vw + 24px);
+  background: linear-gradient(to bottom, #31333b, #4b4e5a);
+}
+.search:focus {
+  background: linear-gradient(to bottom, #31333b, rgb(98, 102, 118));
+}

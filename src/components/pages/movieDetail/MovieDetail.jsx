@@ -1,10 +1,14 @@
 "use client";
 
-import { addMovie } from "@/store/favSlice";
-import { useDispatch } from "react-redux";
+import { handleFav } from "@/store/favSlice";
+import { useDispatch, useSelector } from "react-redux";
+import {AiFillPlusCircle, AiFillCheckCircle} from "react-icons/ai"
 
 const MovieDetail = ({ movie }) => {
   const dispatch = useDispatch();
+  const {myList} = useSelector( store => store.favSlice)
+  const exist = myList.some((e) => e.id === movie.id);
+
   return (
     <div
       style={{
@@ -20,9 +24,9 @@ const MovieDetail = ({ movie }) => {
       <div>{movie.name}</div>
       <button
         style={{ backgroundColor: "red" }}
-        onClick={() => dispatch(addMovie(movie))}
+        onClick={() => dispatch(handleFav(movie))}
       >
-        Guardar fav
+        {exist ? <AiFillCheckCircle/> : <AiFillPlusCircle/>}
       </button>
     </div>
   );

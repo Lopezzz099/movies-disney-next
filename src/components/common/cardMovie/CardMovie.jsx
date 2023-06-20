@@ -5,7 +5,7 @@ import "./CardMovieStyles.css"
 
 const CardMovie = ({ movie, isInHome=false }) => {
   return (
-    <Link href={`/movies/${movie.id}`} className="p-[10px] ">
+    <Link href={`/movies/${movie.id}`} className={isInHome ? "p-[10px]" : "max-w-none"}>
       <Image
         key={movie.id}
         src={movie?.frontImage}
