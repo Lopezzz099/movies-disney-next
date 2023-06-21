@@ -1,4 +1,4 @@
-import CardCategory from "@/components/common/cardCategory/cardCategory";
+import CardCategory from "@/components/common/cardCategory/CardCategory";
 import Carusel from "@/components/layout/carusel/Carusel";
 import Movies from "@/components/pages/movies/Movies";
 
