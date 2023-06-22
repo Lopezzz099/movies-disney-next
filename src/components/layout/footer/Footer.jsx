@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className=" bg-[#0e0b14] mt-[40px] w-full flex flex-col justify-center items-center">
+        <footer className="relative z-10 bg-[#0e0b14] w-full flex flex-col justify-center items-center">
             <Link href="/" className="w-20 pt-5">
             <Image
               src="https://res.cloudinary.com/dishtratk/image/upload/v1685474334/disney-app/common/logo.1a56f51c764022ee769c91d894d44326_d0ssm3.svg"
