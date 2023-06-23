@@ -2,16 +2,21 @@
 
 import { handleFav } from "@/store/favSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { AiFillPlusCircle, AiFillCheckCircle } from "react-icons/ai";
+import { HiPlusSm } from "react-icons/hi";
+import { BiCheck } from "react-icons/bi";
 import { useEffect, useState } from "react";
 import { BsFillPlayFill } from "react-icons/bs";
 import Image from "next/image";
+import "./MovieDetailStyles.css";
 
 const MovieDetail = ({ movie }) => {
   const dispatch = useDispatch();
   const { myList } = useSelector((store) => store.favSlice);
   const exist = myList.some((e) => e.id === movie.id);
   const [opacity, setOpacity] = useState(1);
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {};
 
   useEffect(() => {
     const handleScroll = () => {
@@ -97,8 +102,10 @@ const MovieDetail = ({ movie }) => {
       >
         <div
           style={{
-            paddingTop: "56px",
-            paddingBottom: "16px",
+            marginTop: "56px",
+            marginBottom: "16px",
+            width: "341px",
+            height: "191px",
           }}
         >
           <Image
@@ -154,20 +161,22 @@ const MovieDetail = ({ movie }) => {
           >
             {movie.clasification}
           </p>
-          <Image
-            src={`https://res.cloudinary.com/dishtratk/image/upload/v1687450336/disney-app/common/scale_bb1bat.png`}
-            alt="imax"
-            width={133}
-            height={20}
-            style={{ marginRight: "4px" }}
-          />
-          <Image
-            src={`https://res.cloudinary.com/dishtratk/image/upload/v1687450351/disney-app/common/scale_drubpj.png`}
-            alt="imax"
-            width={38}
-            height={20}
-            style={{ marginRight: "4px" }}
-          />
+          <div style={{ width: "133px", height: "20px", marginRight: "4px" }}>
+            <Image
+              src={`https://res.cloudinary.com/dishtratk/image/upload/v1687450336/disney-app/common/scale_bb1bat.png`}
+              alt="imax"
+              width={133}
+              height={20}
+            />
+          </div>
+          <div style={{ width: "38px", height: "20px", marginRight: "4px" }}>
+            <Image
+              src={`https://res.cloudinary.com/dishtratk/image/upload/v1687450351/disney-app/common/scale_drubpj.png`}
+              alt="imax"
+              width={38}
+              height={20}
+            />
+          </div>
           <p
             style={{
               backgroundColor: "#31343E",
@@ -239,7 +248,7 @@ const MovieDetail = ({ movie }) => {
           </p>
         </button>
         <button
-        className="bg-[#00000099] text-[#f9f9f9] hover:bg-[#f9f9f9] hover:text-[#000]"
+          className="bg-[#00000099] text-[#f9f9f9] hover:bg-[#f9f9f9] hover:text-[#000]"
           style={{
             height: "56px",
             padding: "0 24px",
@@ -254,11 +263,94 @@ const MovieDetail = ({ movie }) => {
           TRÁILER
         </button>
         <button
-          style={{ backgroundColor: "red" }}
-          onClick={() => dispatch(handleFav(movie))}
+          style={{
+            borderRadius: "50%",
+            border: "2px solid #f9f9f9",
+            transition: "all .2s ease-in-out",
+            width: "40px",
+            height: "40px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          className={`buttonList ${isClicked && "rotate"}`}
+          onClick={() => {
+            dispatch(handleFav(movie));
+            if (isClicked) {
+              setIsClicked(false);
+            } else {
+              setIsClicked(true);
+            }
+          }}
         >
-          {exist ? <AiFillCheckCircle /> : <AiFillPlusCircle />}
+          {exist ? (
+            <BiCheck
+              style={{
+                fontSize: "30px",
+                color: "#0072D2",
+                // borderRadius: "50%",
+                // border: "2px solid #f9f9f9",
+                // transition: "all .2s ease-in-out",
+              }}
+            />
+          ) : (
+            <HiPlusSm
+              style={{
+                fontSize: "40px",
+                // borderRadius: "50%",
+                // border: "2px solid #f9f9f9",
+                // transition: "all .2s ease-in-out",
+              }}
+              className="plus"
+            />
+          )}
         </button>
+      </div>
+      <div
+        style={{
+          position: "relative",
+          zIndex: "3",
+          padding: "0 calc(3.5vw + 24px)",
+          marginBottom: "56px",
+        }}
+      >
+        <p
+          style={{
+            fontSize: "20px",
+            color: "#f9f9f9",
+            paddingBottom: "1rem",
+            paddingTop: "1rem",
+            width: "874px",
+            textAlign: "justify",
+          }}
+        >
+          {movie.description}
+        </p>
+      </div>
+      <div
+        style={{
+          position: "relative",
+          zIndex: "3",
+          margin: "0 calc(3.5vw + 24px)",
+          borderBottom: "2px solid rgba(249, 249, 249, 0.2)",
+          marginBottom: "10px",
+        }}
+      >
+        <p
+          style={{
+            color: "#f9f9f9",
+            paddingBottom: "15px",
+            fontSize: "20px",
+            fontWeight: "600",
+            letterSpacing: "2px",
+            lineHeight: "1.4",
+            position: "relative",
+            width: "118px",
+          }}
+          className="detalles"
+        >
+          DETALLES
+        </p>
       </div>
     </div>
   );
