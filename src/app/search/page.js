@@ -22,7 +22,9 @@ const SearchPage = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const res = await fetch("http://localhost:3000/api/movies");
+      const res = await fetch(
+        "http://movies-disney-next.vercel.app/api/movies"
+      );
       const data = await res.json();
       setMovies(data);
     };
@@ -38,7 +40,17 @@ const SearchPage = () => {
         className="search w-full h-[100px] text-[44px] outline-none text-[#a8a9ad] fixed top-[70px] z-10"
         onChange={(e) => setName(e.target.value)}
       />
-      <p style={{marginBottom: "20px", color: "#f9f9f9", fontSize: "20px", padding: "0 calc(3.5vw + 24px)", marginTop: "40px" }}>Explorar</p>
+      <p
+        style={{
+          marginBottom: "20px",
+          color: "#f9f9f9",
+          fontSize: "20px",
+          padding: "0 calc(3.5vw + 24px)",
+          marginTop: "40px",
+        }}
+      >
+        Explorar
+      </p>
       <div
         className="grid grid-cols-5 gap-7"
         style={{ padding: "0 calc(3.5vw + 24px)", marginBottom: "50px" }}

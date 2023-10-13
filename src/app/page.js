@@ -3,7 +3,7 @@ import Carusel from "@/components/layout/carusel/Carusel";
 import Movies from "@/components/pages/movies/Movies";
 
 const getData = async () => {
-  const res = await fetch("http://localhost:3000/api/movies");
+  const res = await fetch("http://movies-disney-next.vercel.app/api/movies");
   const data = await res.json();
   return data;
 };
@@ -53,10 +53,10 @@ export default async function Home() {
     <main
       style={{
         padding: "0 calc(3.5vw + 24px)",
-        paddingTop: "80px"
+        paddingTop: "80px",
       }}
     >
-      <Carusel movies={movies}/>
+      <Carusel movies={movies} />
       <div className="flex flex-wrap flex-row justify-between items-center gap-11 m-10auto relative">
         {arrCategories.map((card) => (
           <CardCategory key={card.path} cardCategory={card} />
@@ -64,7 +64,7 @@ export default async function Home() {
       </div>
 
       {arrGenders.map((gender) => (
-        <Movies key={gender} movies={movies} gender={gender}/>
+        <Movies key={gender} movies={movies} gender={gender} />
       ))}
     </main>
   );
