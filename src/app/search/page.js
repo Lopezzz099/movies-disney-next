@@ -31,17 +31,17 @@ const SearchPage = () => {
   }, []);
 
   return (
-    <div style={{ paddingTop: "74px" }}>
+    <div style={{ paddingTop: "174px" }}>
       <input
         type="text"
         placeholder="Título, personaje o género"
-        className="search w-full h-[100px] text-[44px] outline-none text-[#a8a9ad]"
+        className="search w-full h-[100px] text-[44px] outline-none text-[#a8a9ad] fixed top-[70px] z-10"
         onChange={(e) => setName(e.target.value)}
       />
       <p style={{marginBottom: "20px", color: "#f9f9f9", fontSize: "20px", padding: "0 calc(3.5vw + 24px)", marginTop: "40px" }}>Explorar</p>
       <div
         className="grid grid-cols-5 gap-7"
-        style={{ padding: "0 calc(3.5vw + 24px)" }}
+        style={{ padding: "0 calc(3.5vw + 24px)", marginBottom: "50px" }}
       >
         {!name
           ? movies.map((movie) => <CardMovie key={movie.id} movie={movie} />)
