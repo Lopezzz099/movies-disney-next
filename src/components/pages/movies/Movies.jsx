@@ -17,6 +17,7 @@ const Movies = ({ movies, gender }) => {
     autoplaySpeed: 2000,
     centerMode: false,
   };
+  console.log(movies)
 
   return (
     <div>
