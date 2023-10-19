@@ -1,9 +1,7 @@
 import CardMovie from "@/components/common/cardMovie/CardMovie";
 
 const getData = async () => {
-  const res = await fetch(
-    "http://movies-disney-next-lopezzz099.vercel.app/api/movies"
-  );
+  const res = await fetch("http://movies-disney-next.vercel.app/api/movies");
   const data = await res.json();
   return data;
 };

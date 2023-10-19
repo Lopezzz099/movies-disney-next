@@ -2,7 +2,7 @@ import MovieDetail from "@/components/pages/movieDetail/MovieDetail";
 
 const getMovie = async (id) => {
   const res = await fetch(
-    `http://movies-disney-next-lopezzz099.vercel.app/api/movies/${id}`
+    `http://movies-disney-next.vercel.app/api/movies/${id}`
   );
   const movie = await res.json();
   return movie;

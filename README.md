@@ -12,7 +12,7 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://movies-disney-next-lopezzz099.vercel.app](http://movies-disney-next-lopezzz099.vercel.app) with your browser to see the result.
+Open [http://movies-disney-next.vercel.app](http://movies-disney-next.vercel.app) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
