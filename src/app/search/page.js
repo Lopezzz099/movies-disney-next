@@ -23,7 +23,7 @@ const SearchPage = () => {
   useEffect(() => {
     const getData = async () => {
       const res = await fetch(
-        "https://movies-disney-next.vercel.app/api/movies"
+        "http://movies-disney-next-3yetmvz5a-lopezzz099.vercel.app/api/movies"
       );
       const data = await res.json();
       setMovies(data);
