@@ -1,11 +1,15 @@
 import MovieDetail from "@/components/pages/movieDetail/MovieDetail";
 
 const getMovie = async (id) => {
-  const res = await fetch(
-    `http://movies-disney-next.vercel.app/api/movies/${id}`
-  );
-  const movie = await res.json();
-  return movie;
+  try {
+    const res = await fetch(
+      `http://movies-disney-next.vercel.app/api/movies/${id}`
+    );
+    const movie = await res.json();
+    return movie;
+  } catch (error) {
+    return {};
+  }
 };
 
 const MovieDetailServer = async ({ params }) => {
