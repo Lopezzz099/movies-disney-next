@@ -24,7 +24,7 @@ const SearchPage = () => {
     try {
       const getData = async () => {
         const res = await fetch(
-          "http://movies-disney-next.vercel.app/api/movies"
+          "https://movies-disney-next.vercel.app/api/movies"
         );
         const data = await res.json();
         setMovies(data);
